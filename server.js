@@ -25,9 +25,9 @@ app.post('/api/notes', (req, res) => {
 
   console.log(req.body);
 
-  fs.readFile("./db/db.json", 'utf8', (error, data) => {
+  fs.readFile("db/db.json", 'utf8', (error, data) => {
     let notes = JSON.parse(data);
-    const newlyNote = { "title": `${req.body.title}`, "text": `${req.body.text}`, "note_id": uuid() };
+    var newlyNote = { "title": `${req.body.title}`, "text": `${req.body.text}`, "id": uuid() };
     notes.push(newlyNote);
     notesjson = JSON.stringify(notes);
     fs.writeFile("./db/db.json", notesjson, (err) => {
