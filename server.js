@@ -1,5 +1,5 @@
 const express = require('express');
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 const notesData = require('./db/db.json');
 const path = require('path');
@@ -27,7 +27,7 @@ app.post('/api/notes', (req, res) => {
 
   fs.readFile("./db/db.json", 'utf8', (error, data) => {
     let notes = JSON.parse(data);
-    const newlyNote = { "title": `${req.body.title}`, "text": `${req.body.text}` };
+    const newlyNote = { "title": `${req.body.title}`, "text": `${req.body.text}`, "note_id": uuid() };
     notes.push(newlyNote);
     notesjson = JSON.stringify(notes);
     fs.writeFile("./db/db.json", notesjson, (err) => {
@@ -35,9 +35,12 @@ app.post('/api/notes', (req, res) => {
       res.status(200).json({status: "success"})
     })
   })
-    
 });
 
+app.delete('/api/notes/:id', (req, res) => {
+  
+})
+
 app.listen(PORT, () => {
-  console.log(`Example app listening at http://localhost:${PORT}`);
+  console.log(`App listening at http://localhost:${PORT}`);
 });
