@@ -51,6 +51,12 @@ Collarborators:
 Sichoun Nplhaib Lee: https://github.com/DDXP3
 Joey Thao: https://github.com/Thaodev23
 
+Sources used:
+1. https://stackoverflow.com/questions/44651402/serve-html-with-express
+2. https://stackoverflow.com/questions/53054756/javascript-appending-object-to-json-file
+3. https://nodejs.org/dist/latest-v6.x/docs/api/fs.html#fs_fs_readfile_file_options_callback
+4. https://www.w3schools.com/js/js_json_intro.asp
+
 ## License
 
 There is no license used.
