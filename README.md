@@ -40,7 +40,14 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 
-
+Homepage
+![Homepage](assets/image/homepage.jpg)
+Selecting a Note
+![Select](assets/image/select.jpg)
+Typing a Note
+![Type](assets/image/type.jpg)
+Adding a Note
+![Add](assets/image/add.jpg)
 
 ## Credits
 
