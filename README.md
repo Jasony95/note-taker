@@ -32,22 +32,17 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
 Homepage
-![Homepage](assets/image/homepage.jpg)
+![Homepage](public/assets/image/homepage.jpg)
 Selecting a Note
-![Select](assets/image/select.jpg)
+![Select](public/assets/image/select.jpg)
 Typing a Note
-![Type](assets/image/type.jpg)
+![Type](public/assets/image/type.jpg)
 Adding a Note
-![Add](assets/image/add.jpg)
+![Add](public/assets/image/add.jpg)
+
+Repo Link: https://github.com/Jasony95/note-taker
+Heroku Link: https://note-taking-system-ef9ffc08aa3e.herokuapp.com/notes
 
 ## Credits
 
